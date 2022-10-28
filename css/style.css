@@ -284,7 +284,7 @@ strong {
   margin-left: -36px;
   margin-top: -36px;
   position: absolute;
-  background: url("/images/play-button.png") no-repeat;
+  background: url("../images/play-button.png") no-repeat;
   cursor: pointer;
 }
 
