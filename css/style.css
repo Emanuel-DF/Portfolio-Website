@@ -137,6 +137,10 @@ body #home img.me {
     width: 100%;
   }
 }
+body strong {
+  color: #df7e00;
+  font-weight: 600;
+}
 body p, body ul.list {
   font-size: 1.125em;
   margin-bottom: 1.125rem;
@@ -200,9 +204,7 @@ body .a-btn:hover {
   color: #fff;
   cursor: pointer;
 }
-
-.box-awards, footer {
-  min-height: 100px;
+body .box-awards, body footer {
   background-color: #df7e00;
   color: black;
   display: flex;
@@ -214,38 +216,30 @@ body .a-btn:hover {
   grid-row-gap: 3rem;
   width: 100%;
 }
-.box-awards a, footer a {
+body .box-awards a, body footer a {
   color: #000;
 }
-
-#portfio, #contact {
+body #portfio, body #contact {
   color: #000;
   background-color: #fff;
   margin: 0 auto;
   width: 100%;
   min-height: 100vh;
 }
-#portfio .a-btn:hover, #contact .a-btn:hover {
+body #portfio .a-btn:hover, body #contact .a-btn:hover {
   border: 2px solid #000;
   color: #000;
 }
-
-#about {
+body #about {
   margin: 0 auto;
   width: 100%;
   background-color: #000;
   min-height: 100vh;
 }
-#about ul.list {
+body #about ul.list {
   list-style: inside;
 }
-
-strong {
-  color: #df7e00;
-  font-weight: 600;
-}
-
-.youtube-player {
+body .youtube-player {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -254,7 +248,7 @@ strong {
   background: #000;
   margin: 5px;
 }
-.youtube-player iframe {
+body .youtube-player iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -263,7 +257,7 @@ strong {
   z-index: 100;
   background: transparent;
 }
-.youtube-player img {
+body .youtube-player img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -280,7 +274,7 @@ strong {
   cursor: pointer;
   transition: 0.4s all;
 }
-.youtube-player .play {
+body .youtube-player .play {
   height: 72px;
   width: 72px;
   left: 50%;
@@ -291,28 +285,25 @@ strong {
   background: url("../images/play-button.webp") no-repeat;
   cursor: pointer;
 }
-.youtube-player:hover .play {
+body .youtube-player:hover .play {
   background: url("../images/play-button-hover.webp") no-repeat;
 }
-
-.row {
+body .row {
   display: grid;
   grid-template-columns: none;
   grid-gap: 1em;
   margin-bottom: 3em;
 }
 @media (min-width: 1000px) {
-  .row {
+  body .row {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-.title {
+body .title {
   grid-column-start: 1;
   grid-column-end: -1;
 }
-
-input[type=text], select, textarea {
+body input[type=text], body select, body textarea {
   width: 100%;
   padding: 12px;
   border: 2px solid #000;
@@ -322,15 +313,12 @@ input[type=text], select, textarea {
   resize: vertical;
   font-size: 1.125rem;
 }
-
-textarea::-moz-placeholder {
+body textarea::-moz-placeholder {
   font-size: 1.125rem;
 }
-
-textarea:-ms-input-placeholder {
+body textarea:-ms-input-placeholder {
   font-size: 1.125rem;
 }
-
-textarea::placeholder, input[type=submit] {
+body textarea::placeholder, body input[type=submit] {
   font-size: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
