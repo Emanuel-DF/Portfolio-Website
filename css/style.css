@@ -254,7 +254,6 @@ strong {
   background: #000;
   margin: 5px;
 }
-
 .youtube-player iframe {
   position: absolute;
   top: 0;
@@ -264,7 +263,6 @@ strong {
   z-index: 100;
   background: transparent;
 }
-
 .youtube-player img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -282,11 +280,6 @@ strong {
   cursor: pointer;
   transition: 0.4s all;
 }
-
-.youtube-player img:hover {
-  filter: brightness(75%);
-}
-
 .youtube-player .play {
   height: 72px;
   width: 72px;
@@ -295,8 +288,11 @@ strong {
   margin-left: -36px;
   margin-top: -36px;
   position: absolute;
-  background: url("../images/play-button.png") no-repeat;
+  background: url("../images/play-button.webp") no-repeat;
   cursor: pointer;
+}
+.youtube-player:hover .play {
+  background: url("../images/play-button-hover.webp") no-repeat;
 }
 
 .row {

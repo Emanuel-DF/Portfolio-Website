@@ -278,19 +278,18 @@ strong {
     max-width: 100%;
     background: #000;
     margin: 5px;
-  }
 
-  .youtube-player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background: transparent;
-  }
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
 
-  .youtube-player img {
+    & img {
     object-fit: cover;
     display: block;
     left: 0;
@@ -307,13 +306,9 @@ strong {
     -webkit-transition: 0.4s all;
     -moz-transition: 0.4s all;
     transition: 0.4s all;
-  }
+    }
 
-  .youtube-player img:hover {
-    filter: brightness(75%);
-  }
-
-  .youtube-player .play {
+    & .play {
     height: 72px;
     width: 72px;
     left: 50%;
@@ -321,8 +316,13 @@ strong {
     margin-left: -36px;
     margin-top: -36px;
     position: absolute;
-    background: url('../images/play-button.png') no-repeat;
+    background: url('../images/play-button.webp') no-repeat;
     cursor: pointer;
+    }
+
+    &:hover .play {
+        background: url('../images/play-button-hover.webp') no-repeat;
+    }
   }
 
 
