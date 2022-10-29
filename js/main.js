@@ -1,7 +1,4 @@
-        /*
-         * Light YouTube Embeds by @labnol
-         * Credit: https://www.labnol.org/
-         */
+// to reduce the loading of js and present a nice play button for youtube embeds
       
         function labnolIframe(div) {
             var iframe = document.createElement('iframe');
@@ -32,3 +29,15 @@
           }
         
           document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+
+
+           // To close menu when user presses on link
+window.onload = function() {
+  let chk = document.getElementById('checkbox_toggle');
+  let menuLinks = document.querySelectorAll('.navbar__menu li a');
+  menuLinks.forEach(function(item) {
+      item.addEventListener('click', function() {
+          chk.checked=false;
+      });
+  });
+}

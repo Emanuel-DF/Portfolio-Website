@@ -5,6 +5,17 @@ $yellow: #d4f021;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -342,6 +353,6 @@ strong {
     font-size: 1.125rem;
 }
 
-::placeholder, input[type=submit] {
+textarea::placeholder, input[type=submit] {
     font-size: 1.125rem;
 }
