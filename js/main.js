@@ -17,6 +17,7 @@
               div.setAttribute('data-id', videoId);
               var thumbNode = document.createElement('img');
               thumbNode.src = '//i.ytimg.com/vi/ID/maxresdefault.jpg'.replace('ID', videoId);
+              thumbNode.setAttribute("alt","YouTube video thumbnail image");
               div.appendChild(thumbNode);
               var playButton = document.createElement('div');
               playButton.setAttribute('class', 'play');
