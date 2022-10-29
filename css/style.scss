@@ -242,6 +242,7 @@ body {
         margin: 0 auto;
         width: 100%;
         min-height: 100vh;
+        scroll-margin-top: 80px;
         .a-btn:hover {
             border: 2px solid #000;
             color: #000;
@@ -253,6 +254,7 @@ body {
         width: 100%;
         background-color: #000;
         min-height: 100vh;
+        scroll-margin-top: 80px;
     
         & ul.list {
             list-style: inside;

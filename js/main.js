@@ -41,3 +41,7 @@ window.onload = function() {
       });
   });
 }
+
+
+elmnt = document.getElementById("portfio");
+scrollTo(document.body, elmnt.offsetTop, 600);

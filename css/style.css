@@ -218,6 +218,7 @@ body #portfio, body #contact {
   margin: 0 auto;
   width: 100%;
   min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 body #portfio .a-btn:hover, body #contact .a-btn:hover {
   border: 2px solid #000;
@@ -228,6 +229,7 @@ body #about {
   width: 100%;
   background-color: #000;
   min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 body #about ul.list {
   list-style: inside;
