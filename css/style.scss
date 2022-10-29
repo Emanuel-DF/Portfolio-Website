@@ -1,7 +1,6 @@
-$blue: #00b2ff;
+$blue: #004e85;
 $green: #4cc486;
 $orange: #df7e00;
-$yellow: #d4f021;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
 
@@ -219,7 +218,7 @@ body {
         }
     }
 
-    .box-awards, footer {
+    .box-awards {
         background-color: $orange;
         color: black;
         display: flex;
@@ -243,9 +242,19 @@ body {
         width: 100%;
         min-height: 100vh;
         scroll-margin-top: 80px;
-        .a-btn:hover {
+        .a-btn {
+            background-color:#000;
+            color: #fff;
+        
+        &:hover {
             border: 2px solid #000;
             color: #000;
+            background-color: transparent;
+        }
+    }
+
+        h1 {
+            color: $blue;
         }
     }
 
@@ -258,6 +267,23 @@ body {
     
         & ul.list {
             list-style: inside;
+        }
+    }
+
+    footer {
+        background-color: $blue;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        width: 100%;
+    
+        a {
+            color:#000;
         }
     }
 
