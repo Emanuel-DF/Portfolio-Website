@@ -130,19 +130,39 @@
                 <a class="a-btn" href="https://telegram.me/EmanuelDeFreitas" target="_blank">Telegram</a></p>
 
 
-                <form class="" action="">
+                <form class="" action="https://docs.google.com/forms/d/e/1FAIpQLSfUKQE7qjM7Xoufps0l_jAtRZO4drN7-yfsmzf-i3icGLbFTg/formResponse?" id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;">
+
                     <fieldset>
                         <legend>If you don't require an instant response please leave me a message in the form below.</legend>
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Full Name...">
-                    <label for="email"></label>
-                    <input type="text" name="email" id="email" placeholder="Email address...">
-                    <label for="Message"></label><br>
-                    <textarea name="questions" rows="10" cols="20" id="questions" placeholder="Message..."></textarea>
+
+                    <label for="entry.698458146"></label>
+                    <input type="text" id="entry.698458146" name="entry.698458146" placeholder="Full Name...">
+
+                    <label for="entry.1517518349"></label>
+                    <input type="text" name="entry.1517518349" id="entry.1517518349" placeholder="Email address...">
+
+                    <label for="entry.608167185"></label><br>
+                    <textarea name="entry.608167185" rows="10" cols="20" id="entry.608167185" placeholder="Message..."></textarea>
+
                     <input type="submit" name="submit" value="Send" class="a-btn">
+
                     </fieldset>
                     </form>
 
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+
+                    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                     <script type="text/javascript">
+                        $('#gform').on('submit', function(e){
+                            $('#gform *').fadeOut(2000);
+                            $('#gform').prepend ('Your submission has now been processed. I will get back to you as soon as I can.');
+                        });
+                     </script>
+                
             </div></div>
 
             <footer>
