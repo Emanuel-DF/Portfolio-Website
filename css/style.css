@@ -212,7 +212,7 @@ body .box-awards {
 body .box-awards a {
   color: #000;
 }
-body #portfio, body #contact {
+body #portfolio, body #contact {
   color: #000;
   background-color: #fff;
   margin: 0 auto;
@@ -220,16 +220,16 @@ body #portfio, body #contact {
   min-height: 100vh;
   scroll-margin-top: 80px;
 }
-body #portfio .a-btn, body #contact .a-btn {
+body #portfolio .a-btn, body #contact .a-btn {
   background-color: #000;
   color: #fff;
 }
-body #portfio .a-btn:hover, body #contact .a-btn:hover {
+body #portfolio .a-btn:hover, body #contact .a-btn:hover {
   border: 2px solid #000;
   color: #000;
   background-color: transparent;
 }
-body #portfio h1, body #contact h1 {
+body #portfolio h1, body #contact h1 {
   color: #004e85;
 }
 body #about {
